@@ -1,7 +1,7 @@
 <template>
 	<div id="app">
 		<h1>Tarefas</h1>
-    <TaskGrid :tasks="tasks"></TaskGrid>
+    <TaskGrid :tasks="tasks" />
 	</div>
 </template>
 
@@ -14,8 +14,8 @@ export default {
     data() {
           return {
               tasks: [
-              { name: 'Lavar a louça', padding: false },
-              { name: 'Comprar blusa', padding: true },
+                  { name: 'Lavar a louça', pending: false },
+                  { name: 'Comprar blusa', pending: true },
               ]
           }
     }
